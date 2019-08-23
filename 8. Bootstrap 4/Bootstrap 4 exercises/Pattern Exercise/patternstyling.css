@@ -1,0 +1,9 @@
+header {
+    color: white;
+}
+.jumbotron  {
+    background: url(https://images.unsplash.com/photo-1496989981497-27d69cdad83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1744&q=80)center center no-repeat;
+}
+.card {
+    object-fit: none;
+}

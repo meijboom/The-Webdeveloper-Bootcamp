@@ -1,0 +1,65 @@
+/*
+Kleuren codes
+Donkerblauw: #2c3e50
+licht grijs: #ecf0f1
+
+
+foto's
+https://images.unsplash.com/photo-1562196533-c504efbf3942?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
+https://images.unsplash.com/photo-1479819893311-9c362f79976e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80
+https://images.unsplash.com/photo-1542732056-648731297c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+
+https://images.unsplash.com/photo-1532538014654-28b063b09d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2200&q=80
+https://images.unsplash.com/photo-1537637677791-8c6d8a2bf7d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+https://images.unsplash.com/photo-1524246218500-3dad00b8975d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+
+https://images.unsplash.com/photo-1438755582627-221038b62986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+https://images.unsplash.com/photo-1452110040644-6751c0c95836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80
+https://images.unsplash.com/uploads/1411040661312f50ec8e2/ded9d54e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80
+*/
+
+
+
+body {
+  padding: 70px;
+  background: white;
+}
+.navbar {
+	color: white;
+	background-color: #2c3e50;
+}
+
+img {
+  width: 100%;
+
+}
+
+img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.jumbotron {
+	font-size: 20px;
+	color: black;
+	background-color: #ecf0f1;
+}
+/*
+.footer {
+  /* background: rgb(198, 245, 204); 
+  padding: 20px;
+}
+.fa-facebook, .fa-twitter, .fa-youtube {
+  font-size: 50px;
+}
+
+.icon:hover {
+  color: #eee;
+  opacity: .5;
+  cursor: pointer;
+  /* border-radius: 50%; */
+}
+
+/*.bg-custom {
+  background-color: #fff !important;
+}*/

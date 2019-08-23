@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Form tag exercise
+	</title>
+</head>
+<body>
+<h1>Login</h1>
+
+<!-- action - waar the data naar toe moet, meestal eigen backend -->
+<!-- method is welke http methode gebruikt wordt. (GET of POST) -->
+<!-- Labels geven een naam aan input vakjes, voor bijvoorbeeld blinden-software die alles op leest -->
+<!-- Bij labels zet je de input van het betreffende vakje tussen de <> van label -->
+
+<!-- <form action="http://website.com" method="get/post">
+	<label>
+		email
+		<input type="tekst" name="email" placeholder="email">
+	</label>
+	
+	<label>
+		Password:
+		<input type="password" name="password" placeholder="password">
+	</label>
+	
+	<label>
+		Submit:
+		<input type="submit" name="submit">
+	</label>
+	
+</form>
+</body>
+</html>
+ -->
+
+<!-- Hier onder een andere manier van labelen, hierbij geven we een ID aan een label zodat het input vakje matched aan het label zonder tussen de <> te zitten. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="http://website.com" method="get/post">
+		
+		<label for="email"> email: </label>
+			<input id="email" type="email" name="email" placeholder="email" required>
+	
+	
+		<label for="password"> Password: </label>
+			<input id="password" type="tekst" name="password" placeholder="password" required>
+		
+		
+	
+	  	<label for="submit"></label>
+			<input id="submit" type="submit" name="submit">
+	
+		
+	
+
+</body>
+</html>

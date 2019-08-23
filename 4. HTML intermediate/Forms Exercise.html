@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+</head>
+<body>
+	
+	<h1>Register</h1>
+<form>
+	<div>
+	<!-- namen -->
+	<label for="FirstName"> Naam: </label>
+	<input id="FirstName" type="tekst" name="firstname" placeholder="Jan" required>
+	
+
+	<label for="LastName"> Achternaam: </label>
+	<input id="LastName" type="tekst" name="lastname" placeholder="Smit" required>
+	</div>
+	
+	<div>
+	<!-- Geslacht -->
+	<label for="man"> Man </label>
+	<input id="man" type="radio" name="Gender" value="MAN">
+		
+	<label for="vrouw"> Vrouw </label>
+	<input id="vrouw" type="radio" name="Gender" value="VROUW">
+
+	<label for="anders"> Anders </label>
+	<input id="anders" type="radio" name="Gender" value="ANDERS">
+	</div>
+
+	<div>
+	<!-- email + wachtwoord -->
+	<label for="email"> Email: </label>
+	<input id="email" type="email" name="email" title="Email verplicht." placeholder="Uw Emailadress" required>
+
+	<label for="Password"> Wachtwoord: </label>
+	<input id="Password" type="password" name="Password" minlength="5" maxlength="10" title="Wachtwoord moet tussen de 5 en 10 letters/cijfers zijn." required>
+	</div>
+
+	<div>
+	<!-- geboorte datum -->
+	Geboorte Datum:
+		
+	<select title="Dag"> 
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+
+	<select> 
+		<option>Maand</option>
+		<option>Januari</option>
+		<option>Februari</option>
+		<option>Maart</option>
+	</select>
+
+
+
+	<select> 
+		<option>Jaar</option>
+		<option>1990</option>
+		<option>1991</option>
+		<option>1992</option>
+	</select>
+
+	</div>
+
+	<div>
+		<label for="TAC">Ik ga akkoord met de voorwaarden.</label>
+		<input id="TAC" type="checkbox" name="TAC" required>
+	</div>
+
+
+
+
+<input type="submit" name="submit" value="Verzenden">
+</form>
+
+
+</body>
+</html>

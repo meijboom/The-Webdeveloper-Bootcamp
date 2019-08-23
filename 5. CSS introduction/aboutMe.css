@@ -1,0 +1,18 @@
+body {
+	background: url(http://papers.co/wallpaper/papers.co-vz49-polygon-blue-texture-abstract-pattern-background-23-wallpaper.jpg);
+}
+
+h1 {
+	color: white;
+	border-color: black;
+	border-width: 5px;
+	border-style: dashed;
+}
+
+h4 {
+	color: orange;
+}
+
+li {
+	color: blue;
+}

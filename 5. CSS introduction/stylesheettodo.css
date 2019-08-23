@@ -1,0 +1,17 @@
+body {
+	background: grey;
+}
+
+li {
+	border: solid red;
+	border-width: 1px;
+}
+
+/*.completed {
+	text-decoration: line-through;*/
+}
+
+input {
+	text-decoration: line-through;
+}
+

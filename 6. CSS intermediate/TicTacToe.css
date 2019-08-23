@@ -1,0 +1,25 @@
+body {
+	text-align: center;
+	font-family: roboto;
+}
+table {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+
+td {
+	
+	height: 100px; 
+	width: 100px;
+}
+
+tr:nth-of-type(2) td { 
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+tr td:nth-of-type(even) {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
