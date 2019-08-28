@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>0 - 0</h1>
-    <p> First to 5 wins</p>
-    <input type="number">
-    <button id="p1">    Player 1    </button>
-    <button id="p2">    Player 2    </button>
-    <button id="reset"> reset       </button>
+    <p>
+        This is a little scorekeeper, you can add a point by clicking <strong>Player 1 or Player 2</strong>   
+        <br>
+        add your own amount of wins here:
+                <input type="number">
+    </p>
+
+    <div class= "scorekeeper">
+        <h1> <span id="p1Display">0</span> - <span id="p2Display">0</span></h1>
+        <p> <em> First to <strong><span id=maxScoreInput>7</span></strong> wins </em></p>
+
+        <button id="p1">    Player 1    </button>
+        <button id="p2">    Player 2    </button>
+        <button id="reset"> reset       </button>
+    </div>
+
 
     <script src="appScript.js"></script>
 </body>
