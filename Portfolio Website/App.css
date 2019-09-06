@@ -7,8 +7,12 @@ html, body {
     color: white;
     letter-spacing: 0.2em;
 }
+.hide {
+    display: none;
+    transition: background 300ms;
+}
 body {
-    background: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&h=1440&q=80)fixed center center no-repeat;
+    background: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80)fixed center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,18 +34,9 @@ header nav {
     margin-top: 58px;
     margin-bottom: 100px;
 }
-#content hr {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-}
-#content:after {
-    content: "";
-    display: block;
-}
-.landingpage {
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+
+.blockDisplay {
+    margin-top: 30px;
     padding: 20px;
     text-align: center;
     text-shadow: 1px 0px 7px rgba(0, 0, 0, 1),
@@ -51,6 +46,10 @@ header nav {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+}
+.landingpage {
+    margin-top: 25vh;
+    margin-bottom: 25vh;
 }
 .landingpage h1{
     text-transform: uppercase;
@@ -64,18 +63,13 @@ header nav {
                  4px 2px 15px rgba(255, 255, 255, 1),
                  0px 0px 30px rgba(255, 255, 255, 1);
 }
-#about {
-    margin-top: 30px;
-    padding: 20px;
-    text-align: center;
-    text-shadow: 1px 0px 7px rgba(0, 0, 0, 1),
-                 4px 2px 15px rgba(255, 255, 255, 1),
-                 0px 0px 30px rgba(255, 255, 255, 1);
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+
+.cardSection{
+    margin-bottom: 40px;
 }
+/* .card {
+    margin: 20px;
+} */
 
 .footersocial {
     color: white;

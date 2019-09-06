@@ -15,8 +15,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Lokale Links -->
-	<link rel="stylesheet" type="text/css" href="Stylingnew.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="App.css">
 
 	<!-- CDN stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
@@ -61,16 +61,23 @@
 <main>
 	<div class="container-fluid" id="content">
 		<div class="row justify-content-center">
-			<div class="col-lg-4 landingpage">
+			<div class="col-lg-4 blockDisplay landingpage">
 					<h1>Dennis Meijboom</h1>
 					<hr>
 					<p>Web Developer <br>&<br> Web Designer</p>
 				 	<hr>
 			</div>
 		</div>
-		<hr class="row">
+
+		<div class="row justify-content-center" id="scroll">
+			<div class="col-5 col-md-4 blockDisplay" >
+					<h4>Scroll down for more.</h4>
+					<hr>
+			</div>
+		</div>
+
 		<div class="row justify-content-center">
-			<div class="col-lg-6" id="about">
+			<div class="col-lg-6 blockDisplay" id="about">
 					<h4>What can I do for you?</h4>
 					<hr>
 						<p>
@@ -81,6 +88,40 @@
 		</div>
 	</div>
 </main>
+
+<div class="container cardSection justify-content-center">
+	<div class="row blockDisplay">
+		<h2>My Projects</h2>
+	</div>
+	<div class="container row justify-content-between">
+		<div class="col-lg-3 card blockDisplay">
+			<img src="cardPreviews/cg-Icon.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			<h5 class="card-title">COLOR GAME</h5>
+			<p class="card-text">A game where you have to guess the right color that corresponds with the RGB(x,x,x) value.</p>
+			<a href="#" class="btn btn-dark">Link to game</a>
+			</div>
+		</div>
+	<div class="col-lg-3 card blockDisplay">
+		<img src="cardPreviews/moc-Icon.png" class="card-img-top" alt="...">
+		<div class="card-body">
+		<h5 class="card-title">MUSEUM OF CANDY</h5>
+		<p class="card-text">This is a website that showcases a fictional museum.</p>
+		<a href="/The-Webdeveloper-Bootcamp/Portfolio Website/Museum of Candy/index.html" class="btn btn-dark">Link to Museum of Candy</a>
+		</div>
+	</div>
+	<div class="col-lg-3 card blockDisplay">
+			<img src="cardPreviews/ravotte-Icon.png" class="card-img-top" alt="...">
+			<div class="card-body">
+			<h5 class="card-title">RAVOTTE </h5>
+			<p class="card-text">A website I made for a client.</p>
+			<a href="https://ravottemedia.com/" class="btn btn-dark">Link to Ravotte</a>
+			</div>
+	</div>
+</div>
+</div>
+
+
 
 <!-- Footer -->
 <div class="footersocial">
@@ -107,5 +148,6 @@
 		</div>
 </div>
 
+<script src="App.js"></script>
 </body>
 </html>

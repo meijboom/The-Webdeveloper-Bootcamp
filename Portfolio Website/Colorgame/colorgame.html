@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Great RGB Colorgame!</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<h1>The Great 
+    <br>
+    <span id="colorDisplay">RGB</span> 
+    <br> 
+    colorgame!</h1>
+<div id="stripe">
+    <button id="reset">New Colors</button>
+    <span id="message"></span>
+    <button class= "mode">Easy</button>
+    <button class= "mode selected">Hard</button>
+</div>
+<div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+
+<button id="howtoBtn">How to</button>
+<div class="container howtoDisplay hide">
+    <h2>How to play:</h2>
+    <p>
+        The game is played by guessing the correct colored square on the page.
+        this is done by deducting the RGB colorcode. 
+        0 means there is no color present, 255 is the maximum amount of that color present.
+    </p>
+    <ul>
+        <li> The first number RGB( 255, X , X ) is <span id="R">Red</span>  </li>
+        <li> The second number RGB( X , 255, X ) is <span id ="G">Green</span> </li>
+        <li> The third number RGB( X , X , 255) is <span id ="B">Blue</span></li>
+    </ul>
+</div>
+
+    <script src="cga.js"></script>
+</body>
+</html>
