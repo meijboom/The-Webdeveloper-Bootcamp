@@ -1,6 +1,6 @@
-var scroll = document.getElementById("scroll");
-
-window.addEventListener("scroll", function(){
-    console.log("scrolled")
-    scroll.classList.add("scrolled")
+// when scrolled down, scroll dissapears.
+$(window).scroll(function() {
+    $("#scroll").css({
+    'opacity' : 1-(($(this).scrollTop())/250)
+    });          
 });

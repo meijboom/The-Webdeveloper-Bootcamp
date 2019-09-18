@@ -57,7 +57,7 @@ header nav {
 }
 .landingpage {
     margin-top: 25vh;
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
 }
 .landingpage h1{
     text-transform: uppercase;
@@ -71,7 +71,6 @@ header nav {
                  4px 2px 15px rgba(255, 255, 255, 1),
                  0px 0px 30px rgba(255, 255, 255, 1);
 }
-
 .cardSection{
     margin-bottom: 40px;
 }
@@ -79,6 +78,7 @@ header nav {
     color: white;
     height: 110px;
     border-top: 1px solid white;
+    padding-top: 30px;
     background-color: #2f2f2f;
 }
 .footersocial .container .row:nth-of-type(1) i {

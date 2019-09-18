@@ -4,23 +4,6 @@
 	<meta charset="utf-8">
 	<title>Dennis Meijboom: Home</title>
 
-	<!-- scripts via CDN -->
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<!-- FontAwesome -->
-	<script src="https://kit.fontawesome.com/9de39b7980.js"></script>
-	<!-- Popper -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<!-- Javascript -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-	<!-- Lokale Links -->
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="App.css">
-
-	<!-- CDN stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-
 <meta name="viewport" content="width=device-width, intial-scale=1">
 </head>
 <body>
@@ -70,7 +53,7 @@
 		</div>
 
 		<div class="row justify-content-center" id="scroll">
-			<div class="col-5 col-md-4 blockDisplay" >
+			<div class="col-lg-4 blockDisplay" >
 					<h4>Scroll down for more.</h4>
 					<hr>
 			</div>
@@ -92,32 +75,34 @@
 <div class="container cardSection justify-content-center">
 	<div class="row blockDisplay">
 		<h2>My Projects</h2>
-	</div>
-	<div class="container row justify-content-between">
-		<div class="col-lg-3 card blockDisplay">
-			<img src="cardPreviews/cg-Icon.png" class="card-img-top" alt="...">
-			<div class="card-body">
-			<h5 class="card-title">COLOR GAME</h5>
-			<p class="card-text">A game where you have to guess the right color that corresponds with the RGB(x,x,x) value.</p>
-			<a href="Colorgame/colorgame.html" class="btn btn-dark">Link to game</a>
+
+		<div class="row justify-content-around">
+			<div class="col-md-4 col-lg-3 card blockDisplay">
+				<img src="cardPreviews/cg-Icon.png" class="card-img-top" alt="...">
+				<div class="card-body">
+				<h5 class="card-title">COLOR GAME</h5>
+				<p class="card-text">A game where you have to guess the right color that corresponds with the RGB(x,x,x) value.</p>
+				<a href="Colorgame/colorgame.html" class="btn btn-dark">Link to game</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 card blockDisplay">
+				<img src="cardPreviews/moc-Icon.png" class="card-img-top" alt="...">
+				<div class="card-body">
+				<h5 class="card-title">MUSEUM OF CANDY</h5>
+				<p class="card-text">This is a website that showcases a fictional museum.</p>
+				<a href="museumofcandy/index.html" class="btn btn-dark">Link to Museum of Candy</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 card blockDisplay">
+					<img src="cardPreviews/ravotte-Icon.png" class="card-img-top" alt="...">
+					<div class="card-body">
+					<h5 class="card-title">RAVOTTE </h5>
+					<p class="card-text">A website I made for a client.</p>
+					<a href="https://ravottemedia.com/" class="btn btn-dark">Link to Ravotte</a>
+					</div>
 			</div>
 		</div>
-	<div class="col-lg-3 card blockDisplay">
-		<img src="cardPreviews/moc-Icon.png" class="card-img-top" alt="...">
-		<div class="card-body">
-		<h5 class="card-title">MUSEUM OF CANDY</h5>
-		<p class="card-text">This is a website that showcases a fictional museum.</p>
-		<a href="museumofcandy/index.html" class="btn btn-dark">Link to Museum of Candy</a>
-		</div>
-	</div>
-	<div class="col-lg-3 card blockDisplay">
-			<img src="cardPreviews/ravotte-Icon.png" class="card-img-top" alt="...">
-			<div class="card-body">
-			<h5 class="card-title">RAVOTTE </h5>
-			<p class="card-text">A website I made for a client.</p>
-			<a href="https://ravottemedia.com/" class="btn btn-dark">Link to Ravotte</a>
-			</div>
-	</div>
+	
 </div>
 </div>
 
@@ -126,10 +111,10 @@
 <!-- Footer -->
 <div class="footersocial">
 		<div class="container justify-content-center">
-			<div class="row col-12 justify-content-center">
+			<div class="row justify-content-center">
 				<p>
 					<!-- Linkedin -->
-					<a class="text-white col-4" href="#">
+					<a class="text-white col-4" href="https://www.linkedin.com/in/dennis-meijboom-9051a8193/">
 						<i class="fab fa-linkedin-in fa-lg white-text"></i>
 					</a>
 					<!--Instagram-->
@@ -147,7 +132,26 @@
 			</div>
 		</div>
 </div>
+	<!-- scripts via CDN -->
+	<!-- jQuery -->
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+		
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/9de39b7980.js"></script>
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<!-- Javascript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+	<!-- Lokale Links -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="App.css">
+
+	<!-- CDN stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 <script src="App.js"></script>
 </body>
 </html>
