@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.js">
+    <script src="lib/jquery-git.js"></script>
+</head>
+<body>
+    <div> Div 1</div>
+    <div class="highlight">Div 2</div>
+    <div id="third">Div 3</div>
+    <div class="highlight">Div 4</div>
+
+<!-----------------------Exercise--------------------------------->
+<ul>
+    <li>Correctly include jQuery</li>
+    <li>select all divs and give them a purple background</li>
+    <li>Select the divs with a class "highlight" and make them 200px wide</li>
+    <li>select the div with id"third" and give it a orange border</li>
+    <li>Bonus: select the first div only and change its font color to pink</li>
+</ul>
+<p>
+    my code:<br>
+    $("div").css("background-color", "purple"); <br>
+    $(".highlight").css("width", "200px");<br>
+    $("#third").css("border", "3px solid orange");<br>
+    $("div").first().css("color", "pink")<br>
+</p>
+<script>
+    $("div").css("background-color", "purple");
+    $(".highlight").css("width", "200px");
+    $("#third").css("border", "3px solid orange");
+    $("div").first().css("color", "pink")
+</script>
+
+
+</body>
+</html>
+
+

@@ -7,10 +7,18 @@ html, body {
     color: white;
     letter-spacing: 0.2em;
 }
-.hide {
-    display: none;
-    transition: background 300ms;
+.scrolled {
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+  
 }
+/* HR => Gradient transparant - kleur - transparant */
+hr {
+    border: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
 body {
     background: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80)fixed center center no-repeat;
     -webkit-background-size: cover;
@@ -67,10 +75,6 @@ header nav {
 .cardSection{
     margin-bottom: 40px;
 }
-/* .card {
-    margin: 20px;
-} */
-
 .footersocial {
     color: white;
     height: 110px;
