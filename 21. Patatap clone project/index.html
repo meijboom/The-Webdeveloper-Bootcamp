@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patatap Clone</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- adds PaperJS -->
     <script src="js/paper-full.js"></script>
-    <script type="text/paperscript" canvas="myCanvas">
-        // Create a Paper.js Path to draw a line into it:
-        var path = new Path();
-        // Give the stroke a color
-        path.strokeColor = 'black';
-        var start = new Point(100, 100);
-        // Move to start and draw a line from there
-        path.moveTo(start);
-        // Note the plus operator on Point objects.
-        // PaperScript does that for us, and much more!
-        path.lineTo(start + [ 100, -50 ]);
-    </script>
+    <!-- own Paperscript file -->
+    <script type="text/paperscript" src="js/myPaperScript.js" canvas="myCanvas"></script>
 </head>
 <body>
+    <h1>hi</h1>
     <canvas id="myCanvas" resize></canvas>
+
 </body>
 </html>
