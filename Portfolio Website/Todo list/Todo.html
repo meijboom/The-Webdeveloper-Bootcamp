@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Todo</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+    <!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/9de39b7980.js"></script>
+
+    <!-- jQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>    
+    <!-- own CSS -->
+    <link rel="stylesheet" href="Styling/todo.css">
+</head>
+<body>
+    <div id="container">
+        <h1>To-Do list <span id="toggleForm"><i class="fas fa-plus"></i></span></h1>
+        <input type="text" placeholder="Enter new To-Do">
+        <ul>
+            <li> <span><i class="fas fa-trash-alt"></i></span> finish Todo</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Go to the store</li>
+            <li> <span><i class="fas fa-trash-alt"></i></span> Clean the house</li>
+        </ul>
+    </div>
+
+<!-- own JS -->
+<script src="Scripts/todo.js"></script>
+</body>
+</html>    

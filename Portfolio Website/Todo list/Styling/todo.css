@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 255, 221), rgb(0, 132, 255))
+}
+h1 {
+    background-color: #444444;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+h1 span {
+    opacity: 1;
+    float: right;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    text-transform: capitalize;
+}
+li:nth-child(2n) {
+    background-color: #f7f7f7
+}
+span {
+    color: white;
+    background-color: red;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    transition: linear 300ms;
+    opacity: 0;
+}
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+input {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #444444;
+    font-size: 18px;
+    justify-content: center;
+    border: 3px solid rgba(0,0,0,0);
+    transition: 500ms;
+    text-align: center;
+}
+input:hover, input:focus {
+    background-image:  linear-gradient(to left, rgb(0, 255, 221), rgb(0, 132, 255));
+    border: 3px solid #444444;
+    outline: none;
+}
+#container {
+    background: #f7f7f7;
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1)
+}
+.clicked {
+    color: grey;
+    text-decoration: line-through;
+}
