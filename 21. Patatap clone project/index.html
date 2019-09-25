@@ -7,13 +7,22 @@
     <title>Patatap Clone</title>
     <!-- custom css -->
     <link rel="stylesheet" href="css/app.css">
-    <!-- adds PaperJS -->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap" rel="stylesheet"> 
+    <!-- adds PaperJS & HowlerJS Frameworks -->
     <script src="js/paper-full.js"></script>
-    <!-- own Paperscript file -->
-    <script type="text/paperscript" src="js/myPaperScript.js" canvas="myCanvas"></script>
+    <script src="js/howler.js"></script>
+    <!-- own Paperscript / Howler file -->
+    <script type="text/paperscript" src="js/myPaperHowlerScript.js" canvas="myCanvas"></script>
 </head>
 <body>
-    <h1>hi</h1>
+    <div class="title">
+            <h1>PATATAP </h1>
+            <h2> the Animated Music-Machine</h2>
+    </div>
+
+    <p>
+        Press random letters, and make your own song!
+    </p>
     <canvas id="myCanvas" resize></canvas>
 
 </body>
