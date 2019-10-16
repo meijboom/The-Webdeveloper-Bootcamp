@@ -1,17 +1,25 @@
-* {
-    margin: 0;
-}
 html, body {
-    height: 100%;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     color: white;
     letter-spacing: 0.2em;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), #07629e);
+}
+header nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+	letter-spacing: 0.3em;
+	color: white;
+	background-color: #07629e;
+	border-bottom: 1px solid white;
 }
 .scrolled {
     opacity: 0;
     transition: visibility 0s 1s, opacity 1s linear;
-  
 }
+
 /* HR => Gradient transparant - kleur - transparant */
 hr {
     border: 0px;
@@ -19,74 +27,66 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
-body {
-    background: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80)fixed center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top: 58px;
-}
-header nav {
-	font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    text-transform: uppercase;
-	letter-spacing: 0.3em;
-	color: white;
-	background-color: #07629e;
-	border-bottom: 1px solid white;
-}
-#content {
-    min-height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 58px;
-    margin-bottom: 100px;
-}
-
 .blockDisplay {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     text-align: center;
     text-shadow: 1px 0px 7px rgba(0, 0, 0, 1),
-                 4px 2px 15px rgba(255, 255, 255, 1),
-                 0px 0px 30px rgba(255, 255, 255, 1);
-    border: 1px solid white;
+                 3px 2px 15px rgba(255, 255, 255, 0.8),
+                 0px 0px 10px rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
 .landingpage {
-    margin-top: 25vh;
-    margin-bottom: 15vh;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;  /* for navbar height */
+    background: url(IMGS/CodeBG.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px white dotted;
 }
+.landingpage .row:nth-of-type(1) {
+    padding-top: calc(25vh - 50px); /*for navbar height */
+}
+.landingpage .row:nth-of-type(2) {
+    margin-top: 60px;
+}
+
 .landingpage h1{
     text-transform: uppercase;
-    font-size: 4vmin;
     font-weight: 400;
     letter-spacing: 0.2em;
 }
-.landingpage p{
-    font-size: 3vmin;
-    text-shadow: 1px 0px 7px rgba(0, 0, 0, 1),
-                 4px 2px 15px rgba(255, 255, 255, 1),
-                 0px 0px 30px rgba(255, 255, 255, 1);
+#scroll {
+    /* dont delete, for JS hook */
 }
-.cardSection{
-    margin-bottom: 40px;
+.card button {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+#aboutMe .col-12:nth-of-type(1) {
+    border-bottom: 1px dotted white;
+    margin-bottom: 20px;
 }
 .footersocial {
     color: white;
-    height: 110px;
+    height: 150px;
     border-top: 1px solid white;
     padding-top: 30px;
     background-color: #2f2f2f;
 }
-.footersocial .container .row:nth-of-type(1) i {
+.footersocial .container .row:nth-of-type(1) a {
     text-align: center;
-    margin-top: 25px;
     font-size: 1.5em;
+    text-decoration: none;
 }
-.footersocial .container .row:nth-of-type(1) i:hover {
+.footersocial .container .row:nth-of-type(1) a:hover {
     font-size: 2.0em;
 }
 

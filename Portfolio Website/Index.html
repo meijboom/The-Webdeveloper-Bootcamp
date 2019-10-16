@@ -1,136 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148838974-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-148838974-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-148838974-1');
 	</script>
 
 	<!-- Website -->
 	<meta charset="utf-8">
 	<title>Dennis Meijboom: Home</title>
 
-<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
 </head>
+
 <body>
-
-
 <!-- Navbar -->
-<header>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar" id = "mainNavbar">
-	   <div class="container-fluid">
-	    <a class="navbar-brand" href="Index.html">
-	     Meijboom
-		 </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar" id="mainNavbar">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="Index.html">
+					Meijboom
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Content op rechterzijde, gedaan door ML-AUTO. Align Right-Auto -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">/Over mij</a>
+						</li>
 
-
-
-
-	 <!-- Content op rechterzijde, gedaan door ML-AUTO. Align Right-Auto -->
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		 <ul class="navbar-nav ml-auto">
-		  <li class="nav-item">
-			<a class="nav-link" href="#">/Over mij</a>
-		  </li>
-
-		  <li class="nav-item">
-			<a class="nav-link" href="#">/Contact</a>
-		  </li>
-		</div>
-	   </div>
-
-
-	</nav>
-</header>
-  <!-- ==================================================================================================== -->
- <!-- Titel + Naam -->
-<main>
-	<div class="container-fluid" id="content">
+						<li class="nav-item">
+							<a class="nav-link" href="#">/Contact</a>
+						</li>
+				</div>
+			</div>
+		</nav>
+	</header>
+<!-- End Navbar  -->
+<!-- Landingpage Titel + Naam -->
+	<div class="container-fluid landingpage">
 		<div class="row justify-content-center">
-			<div class="col-lg-4 blockDisplay landingpage">
-					<h1>Dennis Meijboom</h1>
-					<hr>
-					<p>Web Developer <br>&<br> Web Designer</p>
-				 	<hr>
+			<div class="blockDisplay">
+				<hr>
+				<h1>Dennis Meijboom</h1>
+				<hr>
+				<p>Web Developer <br>&<br> Web Designer</p>
+
 			</div>
 		</div>
-
 		<div class="row justify-content-center" id="scroll">
-			<div class="col-lg-4 blockDisplay" >
-					<h4>Scroll down for more.</h4>
-					<hr>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-			<div class="col-lg-6 blockDisplay" id="about">
-					<h4>What can I do for you?</h4>
-					<hr>
-						<p>
-							I can make simple responsive websites, that look professional and modern. <br>
-							The websites will be displayed perfectly on all platforms, from Desktops & Tablets to Phones.
-						</p>
+			<div class="blockDisplay">
+				<p>Learn more about what I do.</p>
+				<i class="fas fa-arrow-down"></i>
 			</div>
 		</div>
 	</div>
-</main>
-
-<div class="container cardSection justify-content-center">
-	<div class="row blockDisplay">
-		<h2>My Projects</h2>
-
-		<div class="row justify-content-around">
-			<div class="col-md-5 card blockDisplay">
-				<img src="cardPreviews/cg-Icon.png" class="card-img-top" alt="...">
-				<div class="card-body">
-				<h5 class="card-title">COLOR GAME</h5>
-				<p class="card-text">A game where you have to guess the right color that corresponds with the RGB(x,x,x) value.</p>
-				<a href="Colorgame/colorgame.html" class="btn btn-dark">Link to game</a>
+	<div class="container">
+<!-- Accordion for projects -->
+		<div class="blockDisplay justify-content-center" id="accordion">
+			<h2>Projects</h2>
+			<div class="card blockDisplay">
+<!-- First accordion part 1 - Personal Projects -->
+				<div class="card-header" id="headingOne">
+					<h5 class="mb-0">
+						<button class="btn btn-dark accordionButton" data-toggle="collapse" data-target="#personalProjects"
+							aria-expanded="true" aria-controls="personalProjects" id="">
+							Personal & Studies <i class="fas fa-caret-down"></i>
+						</button>
+					</h5>
 				</div>
-			</div>
-			<div class="col-md-5 card blockDisplay">
-				<img src="cardPreviews/moc-Icon.png" class="card-img-top" alt="...">
-				<div class="card-body">
-				<h5 class="card-title">MUSEUM OF CANDY</h5>
-				<p class="card-text">This is a website that showcases a fictional museum.</p>
-				<a href="museumofcandy/index.html" class="btn btn-dark">Link to Museum of Candy</a>
-				</div>
-			</div>
-			<div class="col-md-5 card blockDisplay">
-					<img src="cardPreviews/ravotte-Icon.png" class="card-img-top" alt="...">
+<!-- Collapse-able part 1 -->
+				<div id="personalProjects" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
-					<h5 class="card-title">RAVOTTE </h5>
-					<p class="card-text">A website I made for a client.</p>
-					<a href="https://ravottemedia.com/" class="btn btn-dark">Link to Ravotte</a>
+						<div class="row justify-content-around">
+							<div class="col-md-5 col-lg-3 card blockDisplay">
+								<img src="cardPreviews/patatap-Icon.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">PATATAP</h5>
+									<hr>
+									<p class="card-text">An Application to make some music with your keyboard,<br> press
+										some
+										letters and make your own tune with set samples!</p>
+									<a href="PatatapClone/index.html" class="btn btn-dark"><i class="fas fa-link"></i>
+										Patatap</a>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-3 card blockDisplay">
+								<img src="cardPreviews/cg-Icon.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">COLOR GAME</h5>
+									<hr>
+									<p class="card-text">A game where you have to guess the right color that corresponds
+										with
+										the RGB(x,x,x) value.</p>
+									<a href="Colorgame/colorgame.html" class="btn btn-dark"><i class="fas fa-link"></i>
+										Colorgame</a>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-3 card blockDisplay">
+								<img src="cardPreviews/moc-Icon.png" class="card-img-top" alt="...">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">MUSEUM OF CANDY</h5>
+									<hr>
+									<p class="card-text">This is a website that showcases a fictional museum.</p>
+									<a href="museumofcandy/index.html" class="btn btn-dark"><i class="fas fa-link"></i>
+										Museum
+										of Candy</a>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-3 card blockDisplay">
+								<img src="cardPreviews/Todo.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">TO DO LIST</h5>
+									<hr>
+									<p class="card-text">A todo list, made with JavaScript, jQuery, CSS and HTML.</p>
+									<a href="Todo list/Todo.html" class="btn btn-dark"><i class="fas fa-link"></i> ToDo
+										app.</a>
+								</div>
+							</div>
+						</div>
 					</div>
-			</div>
-			<div class="col-md-5 card blockDisplay">
-				<img src="cardPreviews/Todo.jpg" class="card-img-top" alt="...">
-				<div class="card-body">
-				<h5 class="card-title">TO DO LIST</h5>
-				<p class="card-text">A todo list, made with JavaScript, jQuery, CSS and HTML.</p>
-				<a href="Todo list/Todo.html" class="btn btn-dark">Link to ToDo app.</a>
 				</div>
+			</div> 
+<!-- End Card 1 -->
+<!-- Start Card 2 -->
+			<div class="card blockDisplay">
+				<div class="card-header" id="headingOne">
+					<h5 class="mb-0">
+						<button class="btn btn-dark accordionButton" data-toggle="collapse" data-target="#clientProjects"
+							aria-expanded="true" aria-controls="clientProjects">
+							Clients <i class="fas fa-caret-down"></i>
+						</button>
+					</h5>
+				</div>
+<!-- Collapse-able part 1 -->
+				<div id="clientProjects" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="row card-body justify-content-around">
+						<div class="col-md-5 card blockDisplay">
+							<img src="cardPreviews/ruthless-Icon.png" class="card-img-top" alt="Picture of DJ Ruthless">
+							<div class="card-body">
+								<hr>
+								<h5 class="card-title">Portfolio for DJ Ruthless</h5>
+								<hr>
+								<p class="card-text">A website for the famous DJ Ruthless, known for his impact in the
+									freestyle
+									scene.</p>
+								<a href="http://www.meijboom.biz/WebsiteRuud/index.html" class="btn btn-dark"><i
+										class="fas fa-link"></i> Ruthless</a>
+							</div>
+						</div>
+						<div class="col-md-5 card blockDisplay">
+							<img src="cardPreviews/ravotte-Icon.png" class="card-img-top" alt="Picture of Ravotte">
+							<div class="card-body">
+								<hr>
+								<h5 class="card-title">RAVOTTE MEDIA</h5>
+								<hr>
+								<p class="card-text">A landingpage for Ravotte Media, a format for connecting creative
+									people.
+								</p>
+								<a href="https://ravottemedia.com/" class="btn btn-dark"><i class="fas fa-link"></i>
+									Ravotte
+									Media</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+<!-- End Card 2 -->
+		</div> 
+<!-- End accordion -->
+<!-- About Me  -->
+		<div class="row blockDisplay justify-content-center" id="aboutMe">
+			<div class="col-12"> <h2>About Me</h2></div>
+			<div class="col-12 col-md-4">
+				<h3>Where I come from</h3>
+				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui mollitia dolorem possimus aliquid commodi voluptate, enim nobis explicabo dolores quis laudantium ipsum praesentium quidem neque perspiciatis iure sint, minima optio.</p>
+			</div>
+			<div class="col-12 col-md-4">
+				<h3>What I do now</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil atque debitis adipisci sit accusantium placeat quaerat sapiente. Sit enim itaque praesentium vitae obcaecati asperiores voluptas, voluptatum, molestiae suscipit illo cumque.</p>
+			</div>
+			<div class="col-12 col-md-4">
+				<h3>where I want to go</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore culpa labore rem aut ratione facilis cumque at cupiditate, est, a saepe neque sapiente ipsa tenetur asperiores molestias totam fuga recusandae!</p>
+			</div>
 		</div>
-		</div>
-		
-	
-</div>
-</div>
-
-
+	</div>
+	</div> 
+<!-- End container -->
 
 <!-- Footer -->
-<div class="footersocial">
-		<div class="container justify-content-center">
+	<div class="footersocial">
+		<div class="container">
 			<div class="row justify-content-center">
 				<p>
 					<!-- Linkedin -->
@@ -148,23 +226,25 @@
 				</p>
 			</div>
 			<div class="row justify-content-center">
-					<p>&copy; Dennis Meijboom </p>
+				<p>&copy; Dennis Meijboom </p>
 			</div>
 		</div>
-</div>
-	<!-- scripts via CDN -->
+	</div>
+<!-- scripts via CDN -->
 	<!-- jQuery -->
-	<script
-			  src="https://code.jquery.com/jquery-3.4.1.js"
-			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous"></script>
-		
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/9de39b7980.js"></script>
 	<!-- Popper -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
 	<!-- Javascript -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
 
 	<!-- Lokale Links -->
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -172,6 +252,7 @@
 
 	<!-- CDN stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<script src="App.js"></script>
+	<script src="App.js"></script>
 </body>
+
 </html>
