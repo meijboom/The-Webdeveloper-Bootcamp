@@ -23,11 +23,11 @@
 </head>
 
 <body>
-<!-- Navbar -->
+	<!-- Navbar -->
 	<header>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar" id="mainNavbar">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="Index.html">
+				<a class="navbar-brand" href="#home" id="homeLnk">
 					Meijboom
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -39,19 +39,22 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">/Over mij</a>
+							<a class="nav-link" href="#Projects" id="projectLnk">/Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#About" id="aboutLnk">/About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Contact" id="contactLnk">/Contact</a>
 						</li>
 
-						<li class="nav-item">
-							<a class="nav-link" href="#">/Contact</a>
-						</li>
 				</div>
 			</div>
 		</nav>
 	</header>
-<!-- End Navbar  -->
-<!-- Landingpage Titel + Naam -->
-	<div class="container-fluid landingpage">
+	<!-- End Navbar  -->
+	<!-- Landingpage Titel + Naam -->
+	<div class="container-fluid landingpage" id="landing">
 		<div class="row justify-content-center">
 			<div class="blockDisplay">
 				<hr>
@@ -69,20 +72,20 @@
 		</div>
 	</div>
 	<div class="container">
-<!-- Accordion for projects -->
+		<!-- Accordion for projects -->
 		<div class="blockDisplay justify-content-center" id="accordion">
-			<h2>Projects</h2>
+			<h2 class="col-6">My Projects</h2>
 			<div class="card blockDisplay">
-<!-- First accordion part 1 - Personal Projects -->
+				<!-- First accordion part 1 - Personal Projects -->
 				<div class="card-header" id="headingOne">
 					<h5 class="mb-0">
-						<button class="btn btn-dark accordionButton" data-toggle="collapse" data-target="#personalProjects"
-							aria-expanded="true" aria-controls="personalProjects" id="">
+						<button class="btn btn-dark accordionButton" data-toggle="collapse"
+							data-target="#personalProjects" aria-expanded="true" aria-controls="personalProjects">
 							Personal & Studies <i class="fas fa-caret-down"></i>
 						</button>
 					</h5>
 				</div>
-<!-- Collapse-able part 1 -->
+				<!-- Collapse-able part 1 -->
 				<div id="personalProjects" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
 						<div class="row justify-content-around">
@@ -138,19 +141,19 @@
 						</div>
 					</div>
 				</div>
-			</div> 
-<!-- End Card 1 -->
-<!-- Start Card 2 -->
+			</div>
+			<!-- End Card 1 -->
+			<!-- Start Card 2 -->
 			<div class="card blockDisplay">
 				<div class="card-header" id="headingOne">
 					<h5 class="mb-0">
-						<button class="btn btn-dark accordionButton" data-toggle="collapse" data-target="#clientProjects"
-							aria-expanded="true" aria-controls="clientProjects">
-							Clients <i class="fas fa-caret-down"></i>
+						<button class="btn btn-dark accordionButton" data-toggle="collapse"
+							data-target="#clientProjects" aria-expanded="true" aria-controls="clientProjects">
+							Client Projects <i class="fas fa-caret-down"></i>
 						</button>
 					</h5>
 				</div>
-<!-- Collapse-able part 1 -->
+				<!-- Collapse-able part 1 -->
 				<div id="clientProjects" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 					<div class="row card-body justify-content-around">
 						<div class="col-md-5 card blockDisplay">
@@ -160,8 +163,7 @@
 								<h5 class="card-title">Portfolio for DJ Ruthless</h5>
 								<hr>
 								<p class="card-text">A website for the famous DJ Ruthless, known for his impact in the
-									freestyle
-									scene.</p>
+									freestyle scene.</p>
 								<a href="http://www.meijboom.biz/WebsiteRuud/index.html" class="btn btn-dark"><i
 										class="fas fa-link"></i> Ruthless</a>
 							</div>
@@ -173,64 +175,101 @@
 								<h5 class="card-title">RAVOTTE MEDIA</h5>
 								<hr>
 								<p class="card-text">A landingpage for Ravotte Media, a format for connecting creative
-									people.
-								</p>
+									people.</p>
 								<a href="https://ravottemedia.com/" class="btn btn-dark"><i class="fas fa-link"></i>
-									Ravotte
-									Media</a>
+									Ravotte Media</a>
+
+
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> 
-<!-- End Card 2 -->
-		</div> 
-<!-- End accordion -->
-<!-- About Me  -->
-		<div class="row blockDisplay justify-content-center" id="aboutMe">
-			<div class="col-12"> <h2>About Me</h2></div>
-			<div class="col-12 col-md-4">
-				<h3>Where I come from</h3>
-				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui mollitia dolorem possimus aliquid commodi voluptate, enim nobis explicabo dolores quis laudantium ipsum praesentium quidem neque perspiciatis iure sint, minima optio.</p>
 			</div>
-			<div class="col-12 col-md-4">
-				<h3>What I do now</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil atque debitis adipisci sit accusantium placeat quaerat sapiente. Sit enim itaque praesentium vitae obcaecati asperiores voluptas, voluptatum, molestiae suscipit illo cumque.</p>
-			</div>
-			<div class="col-12 col-md-4">
-				<h3>where I want to go</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore culpa labore rem aut ratione facilis cumque at cupiditate, est, a saepe neque sapiente ipsa tenetur asperiores molestias totam fuga recusandae!</p>
-			</div>
+			<!-- End Card 2 -->
 		</div>
-	</div>
-	</div> 
-<!-- End container -->
-
-<!-- Footer -->
-	<div class="footersocial">
-		<div class="container">
-			<div class="row justify-content-center">
-				<p>
-					<!-- Linkedin -->
-					<a class="text-white col-4" href="https://www.linkedin.com/in/dennis-meijboom-9051a8193/">
-						<i class="fab fa-linkedin-in fa-lg white-text"></i>
-					</a>
-					<!--Instagram-->
-					<a class="text-white col-4" href="https://www.instagram.com/meijboomm">
-						<i class="fab fa-instagram fa-lg white-text"></i>
-					</a>
-					<!--Github-->
-					<a class="text-white col-4" href="https://github.com/meijboom">
-						<i class="fab fa-github fa-lg"></i>
-					</a>
+		<!-- End accordion -->
+		<!-- About -->
+		<div class="row blockDisplay justify-content-center" id="about">
+			<div class="col-12">
+				<h2 class="col-6">About Me</h2>
+			</div>
+			<div class="col-12 col-md-6">
+				<h3>Where I come from</h3>
+				<p> My career started at the Army as a Truck-technician.
+					Then changed careers completely to being sailor on an inland barge, loading and discharging
+					chemicals across europe.
+					after 6 fun years working on inland barges. I started working for the Boatmen in the port of
+					Rotterdam and tried that for a year.
+					That wasn't quite the match either, so that was the point I completely changed careers once again.
+					This time going into development.
 				</p>
 			</div>
-			<div class="row justify-content-center">
-				<p>&copy; Dennis Meijboom </p>
+			<div class="col-12 col-md-6">
+				<h3>What I do now</h3>
+				<p>Now I'm a Junior developer, went back to university for Front-End development at the Leidse Onderwijs
+					Instellingen. while also doing the online course from Colt Steele.
+					Called "The Webdeveloper Bootcamp". this course is for fullstack development, with a techstack of:
+					<br>
+					<ul>
+						<li>HTML5 & CSS3</li>
+						<li>Bootstrap 4</li>
+						<li>Vanilla JavaScript & jQuery</li>
+						<li>NodeJS & ExpressJS</li>
+						<li>MongoDB</li>
+					</ul>
+				</p>
+			</div>
+			<div class="col-12 col-md-6">
+				<h3>where I want to go</h3>
+				<p>My Goal is to become a front-end developer within this year, and continue learning, to call myself a
+					fullstack developer next year.
+					I'd love to learn Angular, or going the Python route with Django or Flask.
+					With the diversity of Webdevelopment or software development, I'm sure it will not get boring
+					anytime soon.
+				</p>
 			</div>
 		</div>
+		<!-- End About -->
+		<div class="row blockDisplay" id="contact">
+			<div class="col-12">
+				<h2 class="col-6">Contact</h2>
+			</div>
+			<div class="col-6">
+				<h3>Let's work together.</h3>
+				<a class="btn btn-dark" href="mailto:dennis.meijboom@hotmail.com"><i class="far fa-envelope"></i> MESSAGE ME</a>
+			</div>
+			<div class="col-6">
+				<h3>Or let me work for you.</h3>
+				<a class="btn btn-dark" href="mailto:dennis.meijboom@hotmail.com"><i class="far fa-envelope"></i> HIRE ME</a>
+			</div>
+
+		</div>
 	</div>
-<!-- scripts via CDN -->
+	<!-- End container -->
+
+	<!-- Footer -->
+	<div class="footersocial">
+		<div class="row justify-content-center">
+			<p>
+				<!-- Linkedin -->
+				<a class="text-white col-4" href="https://www.linkedin.com/in/dennis-meijboom-9051a8193/">
+					<i class="fab fa-linkedin-in fa-lg white-text"></i>
+				</a>
+				<!--Instagram-->
+				<a class="text-white col-4" href="https://www.instagram.com/meijboomm">
+					<i class="fab fa-instagram fa-lg white-text"></i>
+				</a>
+				<!--Github-->
+				<a class="text-white col-4" href="https://github.com/meijboom">
+					<i class="fab fa-github fa-lg"></i>
+				</a>
+			</p>
+		</div>
+		<div class="row justify-content-center">
+			<p>&copy; Dennis Meijboom </p>
+		</div>
+	</div>
+	<!-- scripts via CDN -->
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -254,5 +293,4 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<script src="App.js"></script>
 </body>
-
 </html>

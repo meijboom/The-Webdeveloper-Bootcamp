@@ -27,6 +27,10 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
 
+h2 {
+    color: rgba(255, 255, 0, 0.85);
+}
+
 .blockDisplay {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -62,15 +66,12 @@ hr {
     font-weight: 400;
     letter-spacing: 0.2em;
 }
-#scroll {
-    /* dont delete, for JS hook */
-}
 .card button {
     width: 100%;
     height: 100%;
     padding: 0px;
 }
-#aboutMe .col-12:nth-of-type(1) {
+#about .col-12:nth-of-type(1),  #contact .col-12:nth-of-type(1) {
     border-bottom: 1px dotted white;
     margin-bottom: 20px;
 }
@@ -81,13 +82,13 @@ hr {
     padding-top: 30px;
     background-color: #2f2f2f;
 }
-.footersocial .container .row:nth-of-type(1) a {
+.footersocial .row:nth-of-type(1) a {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.0em;
     text-decoration: none;
 }
-.footersocial .container .row:nth-of-type(1) a:hover {
-    font-size: 2.0em;
+.footersocial .row:nth-of-type(1) a:hover {
+    font-size: 2.2em;
 }
 
 #socialfooter {
