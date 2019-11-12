@@ -69,9 +69,3 @@ function scrollToId(id, duration) {
 $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
-
-// carousel data
-$('.carousel').carousel({
-    interval: 2500,
-    pause: "hover"
-  });
